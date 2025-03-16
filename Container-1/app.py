@@ -5,11 +5,11 @@ import json
 
 app = Flask(__name__)
 
-# Container 2's URL (using Kubernetes service name)
+# Container 2's URL
 CONTAINER2_URL = "http://container2-service:5000/process"
 
-# Path to the persistent volume (replace 'yourname' with your first name)
-PV_DIR = "/yourname_PV_dir"
+# Path to the persistent volume
+PV_DIR = "/dhruv_PV_dir"
 
 @app.route('/store-file', methods=['POST'])
 def store_file():
